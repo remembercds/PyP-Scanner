@@ -1,4 +1,4 @@
-![](https://imgur.com/ppqe8Ma)
+![](https://i.imgur.com/ppqe8Ma.png)
 
 Instead of IP scanner it's pyP scanner get it, because it was written in python, right .. you get it.
 
