@@ -21,21 +21,20 @@ ______     ______   _____
 
 print("Python version:", sys.version)
 
-<<<<<<< HEAD
 target = input('Enter in a website to scan their IP: ')
-=======
-target = input('Enter in a website to scan their IP o boy: ')
->>>>>>> 367b2d1a401a5abc028d4de537d1471d4874dead
 server = target
 
+print("-----------------------------Requesting WHOIS data-----------------------------")
 whois = sub(server)
 print(whois)    
 
+print("-----------------------------Grabbing IP-----------------------------")
 server_ip = socket.gethostbyname(server) #get ip adress of server name
 print('IP:', server_ip)
 
 print_lock = threading.Lock() #threading lock
 
+print("-----------------------------Scanning ports-----------------------------")
 def pscan(port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
